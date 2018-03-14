@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Bymark</title>
+		<meta name="author" content="Mattia Righetti" />
+		<meta name="description" content="" />
+		<meta name="keywords"  content="" />
+		<meta name="Resource-type" content="Document" />
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+		<link rel="stylesheet" type="text/css" href="/css/fullpagescroll.css" />
+		<link rel="stylesheet" type="text/css" href="/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/css/hamburger.css" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900i" rel="stylesheet">
+		<style>
+/* GENERAL STYLING */
+img {
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+/*.wrap {
+	width: 1180px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}*/
+.box {
+    text-align: left;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+.section {
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+}
+.slide {
+    background-size: cover;
+}
+#fp-nav ul li .fp-tooltip {
+    color: #FF91C9;
+}
+#fp-nav ul:hover .fp-tooltip {
+    right: 20px;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
+.fill {
+    min-height: 100%;
+    height: 100%;
+}
+/* 1. HOME SECTION */
+#home-section {
+    background-image: url(/images/home_bg.jpg);
+}
+
+/*screen resolutions between 620px and 800px*/
+@media all and (max-height: 1020px) {
+#logo {
+	height: 10vh;
+	width: auto;
+}
+}
+.home-text {
+				margin-top: 25vh
+			}
+			
+/*screen resolutions lower than 620px*/
+@media all and (min-height: 1020px) {
+#logo {
+    height: 15vh;
+	width: auto;
+}
+}
+/* 2. INTELLICLIMA SECTION */
+#intelliclima-overview img {
+/*position: absolute;
+	left: 40px;
+	top: 50%;*/
+}
+#intelliclima-overview .box {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    margin-top: -292px;
+    margin-left: 89px;
+    width: 550px;
+    z-index: 1;
+}
+#intelliclima-overview .imgsContainer {
+    /*display: block;*/
+	/*position: absolute;*/
+    z-index: 1;
+    /*top: 42%;
+	left: 58%;
+	margin-top: -325px;
+	margin-left: -747px;*/
+    width: 50%;
+    height: 100%;
+}
+/*#intelliclima-overview img {
+	height: 60%;
+}*/
+#intelliclima-home {
+    z-index: 10;
+}
+.intelliclima-home {
+    z-index: 10;
+}
+/*screen resolutions between 620px and 800px*/
+/*@media all and (min-width: 620px) and (max-width: 800px) {
+#intelliclima-section .imgsContainer {
+	margin-top: -278px;
+	margin-left: -685px;
+	width: 647px;
+	height: 563px;
+}
+}
+
+@media all and (max-width: 620px) {
+#intelliclima-section .imgsContainer {
+	margin-top: -208px;
+	margin-left: -516px;
+	width: 534px;
+	height: 464px;
+}
+}*/
+/* 3. CALDAIA SECTION */
+#caldaia-overview .box {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    margin-top: -292px;
+    margin-left: 89px;
+    width: 550px;
+    z-index: 1;
+}
+#caldaia-overview .imgsContainer {
+    /*display: block;*/
+	/*position: absolute;*/
+    z-index: 1;
+    /*top: 42%;
+	left: 58%;
+	margin-top: -325px;
+	margin-left: -747px;*/
+    width: 50%;
+    height: 100%;
+}
+/*4. ELKRON SECTION */
+#elkron-overview .box {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    margin-top: -292px;
+    margin-left: 89px;
+    width: 550px;
+    z-index: 1;
+}
+#elkron-overview .imgsContainer {
+    /*display: block;*/
+	/*position: absolute;*/
+    z-index: 1;
+    /*top: 42%;
+	left: 58%;
+	margin-top: -325px;
+	margin-left: -747px;*/
+    width: 50%;
+    height: 100%;
+}
+/*#elkron-overview img {
+	height: 60%;
+}*/
+#elkron-home {
+    z-index: 10;
+}
+.elkron-home {
+    z-index: 10;
+}
+/* 5. URMET */
+#urmet-overview .box {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    margin-top: -292px;
+    margin-left: 89px;
+    width: 550px;
+    z-index: 1;
+}
+#urmet-overview .imgsContainer {
+    /*display: block;*/
+	/*position: absolute;*/
+    z-index: 1;
+    /*top: 42%;
+	left: 58%;
+	margin-top: -325px;
+	margin-left: -747px;*/
+    width: 50%;
+    height: 100%;
+}
+/* 6. CONTATTI SECTION */
+#contatti-section {
+    background-image: url(/images/contatti_bg.jpg);
+}
+#footer {
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 9;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+/*screen resolutions between 620px and 800px*/
+@media all and (max-height: 1020px) {
+#logo-white {
+    width: 10%;
+    padding-top: 10%;
+    margin-bottom: 15%;
+}
+}
+
+/*screen resolutions lower than 620px*/
+@media all and (min-height: 1020px) {
+#logo-white {
+    width: 20%;
+    padding-top: 50px;
+}
+}
+			
+			
+</style>
+		<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<!--<script>
+			//Disabilita fullpage su mobile.
+			if (screen && screen.width > 1) {
+				document.write('<script type="text/javascript" src="/js/fullpagescroll.js"><\/script>');
+			}
+		</script>-->
+		<script type="text/javascript" src="/js/fullpagescroll.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+			<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+        lockAnchors: false,
+        anchors: ['home', 'intelliclima', 'urmet', 'elkron', 'boiler', 'contatti'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['HOME', 'TERMOSTATO', 'VIDEOCITOFONO', 'ANTIFURTO', 'CALDAIA', 'CONTATTI'],
+        showActiveTooltip: false,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        continuousHorizontal: false,
+        scrollHorizontally: false,
+        interlockedSlides: false,
+        dragAndMove: false,
+        offsetSections: false,
+        resetSliders: false,
+        fadingEffect: false,
+        scrollOverflow: false,
+        scrollOverflowReset: false,
+        scrollOverflowOptions: null,
+        touchSensitivity: 15,
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+        controlArrows: false,
+        verticalCentered: true,
+        sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
+        responsiveWidth: 0,
+        responsiveHeight: 0,
+        responsiveSlides: true,
+        lazyLoading: true,
+			});
+		});
+		</script>	
+		</head>
+		<body>
+<!-- navbar -->
+<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+<div class="overlay" id="overlay">
+          <nav class="overlay-menu" id="nav-link">
+    <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#intelliclima">TERMOSTATO</a></li>
+              <li><a href="#urmet">VIDEOCITOFONO</a></li>
+              <li><a href="#elkron">ANTIFURTO</a></li>
+              <li><a href="#boiler">CALDAIA</a></li>
+              <li><a href="#contatti">CONTATTI</a></li>
+            </ul>
+  </nav>
+        </div>
+<!-- end - navbar-->
+<div id="fullpage">
+	<!-- HOMEPAGE -->
+          <div class="section" id="home-section"> 
+			  <img data-src="/images/bylogo.png" id="logo" alt="Bymark logo" />
+    <div class="home-text">
+			  <h1 style="color: #FF91C9">USER EXPERIENCE</h1>
+    <br>
+    <br>
+    <p style="color:#FFF; font-size: 26px; text-align: center; font-weight: 300;"> Disegnamo interfacce per oggetti intelligenti <br>
+              conducendo team di lavoro multidisciplinari</p>
+    <br>
+    <br>
+    <p style="color: #FF91C9; font-size: 24px; font-weight: 300; margin-bottom: 5%">User Experience è l'arte di progettare il buon uso delle cose</p>
+			  </div>
+  </div>
+          <!-- /HOMEPAGE --> 
+	
+          <!-- Intelliclima section -->
+          <div class="section" id="intelliclima-section">
+    <div class="slide" id="intelliclima-overview" data-anchor="overview">
+              <div class="container-fluid">
+        <div class="row">
+                  <div class="col-4"> <img class="align-self-center mr-3 img-responsive" src="images/intelliclima-home.jpg" alt="intelliclima" id="ome" style="max-height: 532px; max-width: 300px" /> </div>
+                  <div class="col-8">
+            <h2 align="left" style="font-family: Lato; font-size: 34px; font-weight: 900;">UN TERMOSTATO ACCOGLIENTE</h2>
+            <h3 align="left" style="font-family: Lato; font-size: 20px; font-weight: 700;">App per cronotermostato intelligente</h3>
+            <div class="row">
+                      <div class="col-8">
+                <p style="padding-top:43px; text-align: justify; color: #575757; font-family: Lato; font-size: 16px; font-weight: 400; line-height: 1.5">La programmazione di un cronotermostato spesso si rivela molto più difficile di quanto si vorrebbe.<br>
+                          <br>
+                          Qui abbiamo studiato un processo che, attraverso poche semplici interazioni, permette la costruzione dei programmi  e la loro assegnazione ai giorni della settimana, con una lista di grafici che consente una veloce lettura di tutta la pianificazione settimanale.<br>
+                          <br>
+                          Oltre al design dell'interfaccia, abbiamo curato frontend, backend e installazione del sistema cloud.<br>
+                          <br>
+                          Lungo la nostra strada abbiamo incontrato problematiche tecniche che, grazie alla visione sistemica dello staff multidisciplinare, sono state affrontate facendo scaturire soluzioni inedite. Il positivo effetto collaterale di questa impresa è stato il consolidamento di uno spirito di gruppo che coinvolge diversi team di progettazione.</p>
+              </div>
+                      <div class="col-4">
+                <p style="color:#575757; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.2;"><i>Cliente</i></p>
+                <p style="color:#000; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.6"><i><b>Fantini Cosmi</b></i></p>
+                <br>
+                <br>
+                <p style="color:#575757; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.2;"><i>Servizi</i></p>
+                <p style="color:#000; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.6"><i><b>User Research<br>
+                  User Interface Design<br>
+					Application Development</b></i><br><br><br><a href="#intelliclima/detail"><span style="color: #e0137b; font-style: bold;">&rarr; Guarda</span></a></p>
+              </div>
+                    </div>
+          </div>
+                </div>
+      </div>
+            </div>
+    <div class="slide" style="background-color: #202020" id="intelliclima-detail" data-anchor="detail">
+              <div class="container">
+        <div class="row">
+			<div class="col-12">
+				<img style="max-height: 504px; max-width: 800px" src="images/intelliclima3.png" alt="intelliclima" class="align-self-center mr-3 img-responsive" /> </div>
+                </div>
+      </div>
+            </div>
+  </div>
+          
+          <!-- /section --> 
+	          <!-- Urmet section -->
+          <div class="section" id="urmet-section">
+    <div class="slide" id="urmet-overview" data-anchor="overview">
+              <div class="container">
+        <div class="row">
+                  <div class="col-12"> <img class="align-self-center mr-3 img-responsive" src="images/urmet-home.png" alt="urmet" id="urmet-home" style="max-height: 338px; max-width: 576px; padding-bottom: 40px" />
+            <h2 align="left" style="font-family: Lato; font-size: 34px; font-weight: 900;">ANDROID PER LA CASA</h2>
+            <h3 align="left" style="font-family: Lato; font-size: 20px; font-weight: 700;">Videocitofono residenziale</h3>
+            <div class="row">
+                      <div class="col-5">
+                <p style="padding-top:43px; text-align: justify; color: #575757; font-family: Lato; font-size: 16px; font-weight: 400; line-height: 1.5">La scelta di sviluppare questo videocitofono su un display Android, ci ha impegnato nello studio di una interfaccia che consentisse l'apertura alla rete cloud, con un linguaggio grafico accessibile alla eterogena popolazione di qualsiasi abitazione.<br>
+                          <br>
+                          Il design è stato coadiuvato da una serie di user test che hanno permesso di far emergere i passaggi poco</p>
+              </div>
+                      <div class="col-5">
+                <p style="padding-top:43px; text-align: justify; color: #575757; font-family: Lato; font-size: 16px; font-weight: 400; line-height: 1.5">comprensibili per poi elaborare soluzioni di interazione accessibili anche alle persone più anziane, non abituate al mondo digitale. Trattandosi di un prodotto a larga diffusione internazionale, è stato necessario coinvolgere intensamente nel team di progetto i diversi player commerciali, svolgendo un lavoro semiotico che conducesse alla realizzazione di un set di icone universalmente riconoscibili.</p>
+              </div>
+                      <div class="col-2">
+                <p style="color:#575757; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.2;"><i>Cliente</i></p>
+                <p style="color:#000; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.6"><i><b>Urmet</b></i></p>
+                <br>
+                <br>
+                <p style="color:#575757; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.2;"><i>Servizi</i></p>
+                <p style="color:#000; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.6"><i><b>User Testing<br>
+                  User Interface Design</b></i><br><br><br><a href="#urmet/detail"><span style="color: #e0137b; font-style: bold;">&rarr; Guarda</span></a></p>
+              </div>
+                    </div>
+          </div>
+                </div>
+      </div>
+            </div>
+    <div class="slide" style="background-color: #202020" id="urmet-detail" data-anchor="detail">
+              <div class="container">
+        <div class="row">
+                  <div class="col-12"> <img style="max-height: 504px; max-width: 800px" src="images/urmet3.png" alt="intelliclima" class="align-self-center mr-3 img-responsive" /> </div>
+                </div>
+      </div>
+            </div>
+  </div>
+          <!-- /section --> 
+          <!-- Elkron section -->
+          <div class="section" id="elkron-section">
+    <div class="slide" id="elkron-overview" data-anchor="overview">
+              <div class="container-fluid">
+        <div class="row">
+                  <div class="col-4"> <img class="align-self-center mr-3 img-responsive" src="images/elkron-home.jpg" alt="elkron" id="elkron-home" style="max-height: 532px; max-width: 300px" /> </div>
+                  <div class="col-8">
+            <h2 align="left" style="font-family: Lato; font-size: 34px; font-weight: 900;">UN ANTIFURTO ACCESSIBILE</h2>
+            <h3 align="left" style="font-family: Lato; font-size: 20px; font-weight: 700;">App di controllo antintrusione</h3>
+            <div class="row">
+                      <div class="col-8">
+                <p style="padding-top:43px; text-align: justify; color: #575757; font-family: Lato; font-size: 16px; font-weight: 400; line-height: 1.5">Un antifurto deve impedire l'accesso agli intrusi  ma la sua interfaccia dovrebbe essere facilmente accessibile all'utente.<br>
+                          Abbiamo lavorato su questo trade-off, limitando i cambi pagina per agevolare l'immediatezza delle informazioni più urgenti, offrendo sul primo livello i comandi rapidi personalizzabili e un'area di consultazione non protetta ma senza rischio per la sicurezza.<br>
+                          <br>
+                          Abbiamo sviluppato il frontend della app  in stretta collaborazione con il team di ingegneri Elkron, è stato impegnativo curare ogni dettaglio per garantire il coerente funzionamento di un prodotto che per sua natura richiede molti vincoli.<br>
+                          <br>
+                          In particolare si è rivelata preziosa la facilitazione di periodici scrum interfunzionali per affrontare i problemi  da tutti i numerosi punti di vista, sia tecnici che commerciali.</p>
+              </div>
+                      <div class="col-4">
+                <p style="color:#575757; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.2;"><i>Cliente</i></p>
+                <p style="color:#000; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.6"><i><b>Elkron</b></i></p>
+                <br>
+                <br>
+                <p style="color:#575757; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.2;"><i>Servizi</i></p>
+                <p style="color:#000; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.6"><i><b>User Testing<br>
+                  User Interface Design<br>
+                  Frontend Development</b></i><br><br><br><a href="#elkron/detail"><span style="color: #e0137b; font-style: bold;">&rarr; Guarda</span></a></p>
+              </div>
+                    </div>
+          </div>
+                </div>
+      </div>
+            </div>
+    <div class="slide" style="background-color: #202020" id="elkron-detail" data-anchor="detail">
+              <div class="container">
+        <div class="row">
+                  <div class="col-12"> <img style="max-height: 504px; max-width: 800px" src="images/elkron3.png" alt="intelliclima" class="align-self-center mr-3 img-responsive" /> </div>
+                </div>
+      </div>
+            </div>
+  </div>
+         
+          <!-- /section --> 
+          <!-- Caldaia section -->
+          <div class="section" id="caldaia-section">
+    <div class="slide" id="caldaia-overview" data-anchor="overview">
+              <div class="container">
+        <div class="row">
+                  <div class="col-12"> <img class="align-self-center mr-3 img-responsive" src="images/boiler-home.png" alt="boiler" id="boiler-home" style="max-height: 338px; max-width: 956px; padding-bottom: 40px" />
+            <h2 align="left" style="font-family: Lato; font-size: 34px; font-weight: 900;">TERMOTECNICA PER TUTTI</h2>
+            <h3 align="left" style="font-family: Lato; font-size: 20px; font-weight: 700;">Display per caldaia murale</h3>
+            <div class="row">
+                      <div class="col-5">
+                <p style="padding-top:43px; text-align: justify; color: #575757; font-family: Lato; font-size: 16px; font-weight: 400; line-height: 1.5">Questa caldaia a condensazione per sistemi di riscaldamento ibridi, consente elevate prestazioni di risparmio energetico, ma i parametri da controllare non sono facilmente leggibili per un utente medio.
+                          Abbiamo quindi sviluppato due differenti livelli di navigazione, a seconda che l'utente sia l'abitante della casa o il tecnico installatore.</p>
+              </div>
+                      <div class="col-5">
+                <p style="padding-top:43px; text-align: justify; color: #575757; font-family: Lato; font-size: 16px; font-weight: 400; line-height: 1.5">Il lavoro di Information Architecture è stato particolarmente intenso, perché si trattava di organizzare in modo semplice le informazioni di un sistema complesso, molte cose sono infatti scontate per gli addetti ai lavori ed è stato necessario ricostruire con loro lo schema logico del sistema per poi presentarlo all'utente in forma narrativa.
+                          La demo è stata presentata con successo al salone Expocomfort 2016.</p>
+              </div>
+                      <div class="col-2">
+                <p style="color:#575757; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.2;"><i>Cliente</i></p>
+                <p style="color:#000; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.6"><i><b>Big Player HVAC</b></i></p>
+                <br>
+                <br>
+                <p style="color:#575757; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.2;"><i>Servizi</i></p>
+                <p style="color:#000; font-size: 14px; text-align: justify; font-family: Lato; line-height: 1.6"><i><b>User Interface Design<br>
+                  Demo</b></i><br><br><br><a href="#boiler/detail"><span style="color: #e0137b; font-style: bold;">&rarr; Guarda</span></a></p>
+              </div>
+                    </div>
+          </div>
+                </div>
+      </div>
+            </div>
+    <div class="slide" style="background-color: #202020" id="caldaia-detail" data-anchor="detail">
+              <div class="container">
+        <div class="row">
+                  <div class="col-12"> <img style="max-height: 504px; max-width: 800px" src="images/boiler3.png" alt="intelliclima" class="align-self-center mr-3 img-responsive" /> </div>
+                </div>
+      </div>
+            </div>
+  </div>
+          <!-- /section --> 
+          <!--- Contatti section -->
+          <div class="section" id="contatti-section">
+    <div class="container-fluid d-flex flex-column" style="min-height: 100%">
+              <div class="row" style="height: 33vh">
+        <div class="col-12"> <img class="mx-auto d-block" src="/images/bylogo_white.png" id="logo-white" style="" /> </div>
+      </div>
+              <div class="row"  style="height: 33vh">
+        <div class="col-12">
+                  <h2 style="text-align: center; font-size: 18px; padding-top: 5%">by@bymark.it | Milan  Italy</h2>
+                </div>
+      </div>
+              <div class="row" style="height: 33vh">
+        <div class="col-12">
+                  <p style="color:#000; font-size: 14px; text-align: center; font-weight: 300; padding-bottom: 1px">UX Consulting - User Research - Information Architecture - Interaction Design - Visual Design - User Testing<br>
+            <br>
+            ABB - ACI INTERCOM - BTICINO - CEFLA -  ELKRON - FANTINI COSMI - KARISMEDICA - RIELLO - TECHNOGYM - URMET - VIMAR </p>
+                </div>
+      </div>
+            </div>
+  </div>
+        </div>
+<!-- fullpage-->
+			
+				<!-- hamburger -->
+
+		<script>
+			// apre menu hamburger con click
+				$('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+			</script>
+			<script>
+				// chiude automaticamente menu hamburger dopo click link
+				$('#nav-link').click(function() {
+jQuery('#toggle').removeClass('active');
+					jQuery('#overlay').removeClass('open');
+  });
+			</script>
+		<!-- /hamburger-->
+			
+</body>
+</html>
